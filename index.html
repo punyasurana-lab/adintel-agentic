@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lumen · Marketing Platform (Prototype)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app onb" id="app">
+  <header class="top">
+    <div class="logo"><i></i>Lumen</div>
+    <div class="ws" id="ws"></div>
+    <div class="copilot" id="copilot"><div class="cpw"><span id="cpI"></span><input type="text" id="cpIn" placeholder="Ask Lumen to change something, e.g. shorten the headlines" autocomplete="off"></div><div class="cpout" id="cpOut"></div></div>
+    <div class="spacer"></div>
+    <span class="proto">Prototype · data captured from live sources on 26 Oct 2026</span>
+    <button class="tbtn" id="bellBtn">Needs you <b>0</b></button>
+    <button class="tbtn" id="toolBtn">Activity <b id="toolN">0</b></button>
+    <button class="tbtn" id="demoBtn">Demo controls</button>
+  </header>
+  <div class="body">
+    <nav class="side" id="side"></nav>
+    <main id="stage"></main>
+  </div>
+  <div class="demo" id="demo">
+    <span class="lbl">Guided tour</span>
+    <div style="display:flex;gap:6px"><button class="btn sm" id="tourBtn" style="flex:1;justify-content:center">Start tour</button></div>
+    <span class="lbl" style="margin-top:12px">Animation speed</span>
+    <div class="seg" id="spdSeg"><button class="on" data-s="1">Normal</button><button data-s="0.3">Fast</button></div>
+    <div style="margin-top:12px"><button class="btn sm ghost" id="resetBtn" style="width:100%;justify-content:center">Restart prototype</button></div>
+  </div>
+  <aside class="drawer" id="drawer">
+    <h3>Agent activity</h3>
+    <div class="tcs" id="log"><div class="empty">No actions yet.</div></div>
+  </aside>
+  <div class="inbox" id="inbox"></div>
+  <div class="tour" id="tour"></div>
+  <div id="overlay"></div>
+</div>
+<script src="data.js"></script>
+<script src="crawl-data.js"></script>
+<script src="app.js"></script>
+<script src="views.js"></script>
+<script src="views2.js"></script>
+<script src="views3.js"></script>
+</body>
+</html>
